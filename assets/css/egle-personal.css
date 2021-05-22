@@ -1,15 +1,27 @@
 .main-container {
     width:1240px;
     background-color: darkkhaki;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list ul {
+    display: flex;
+}
+
+.menu-list ul li {
+    list-style: none;
+    padding-left: 20px;
 }
 
 .menu-bar {
-    display:flex; 
-    
 }
 
 .menu-list {
-    display:flex;  
 }
 
 .section-1 {
