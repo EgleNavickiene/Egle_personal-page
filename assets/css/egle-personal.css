@@ -1,0 +1,18 @@
+.main-container {
+    width:1240px;
+    background-color: darkkhaki;
+}
+
+.menu-bar {
+    display:flex; 
+    flex-direction: row;
+}
+
+.menu-list {
+    display:flex;  
+}
+
+.section-1 {
+    display: flex;
+}
+
