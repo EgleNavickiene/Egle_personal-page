@@ -10,7 +10,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5px;
+  z-index:999;
+
 }
 
 .menu-list ul {
@@ -20,6 +21,7 @@ body {
 .menu-list ul li {
   list-style: none;
   padding-right: 30px;
+  padding-bottom: 5px;
 }
 
 .section-1 {
@@ -54,8 +56,8 @@ body {
 }
 
 @media (max-width: 575.98px)  {
-  .section1 {
-    padding: 5px;
+  .section-1 {
+    padding: 8px;
   }
   .section-card__text-box {
     width: 100%;
