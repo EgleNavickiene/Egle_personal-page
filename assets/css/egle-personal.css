@@ -38,6 +38,12 @@ header {
   padding-bottom: 5px;
 }
 
+.menu-list ul li a {
+  color: red;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .section-1  {
   background-color: rgb(199, 230, 212);
     padding-left: 30px;
