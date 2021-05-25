@@ -5,7 +5,7 @@ body {
 .main-container {
   max-width: 1240px;
   margin: auto;
-  position: relative;
+  /* position: relative; */
 }
 
 header {
@@ -15,6 +15,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 19;
+  box-shadow: 0 1px 10px 0 rgb(0 0 0 / 30%);
 }
 
 .header-wrapper {
@@ -47,27 +48,36 @@ header {
   position: absolute;
   left: 0;
   top: 100%;
-  background: red;
+  background: rgb(64, 98, 30);
   z-index: 99;
 }
 
 .menu-list a:hover {
-  color: red;
+  color: rgb(64, 98, 30);
+  font-weight: 600;
 }
 
 .menu-list .active {
-  color: red;
+  color: rgb(64, 98, 30);
+  font-weight: 600;
 }
 
 .menu-list li:hover .sub-menu {
   display: block;
-  background:red;
+  background:rgb(125, 184, 66);
+  
 }
 
 ul.sub-menu {
   flex-wrap: wrap;
   padding: 0 15px;
   display: none;
+  color: white;
+}
+
+ul.sub-menu a:hover {
+  color: white;
+  font-weight: 600;
 }
 
 ul.sub-menu li {
@@ -100,19 +110,20 @@ ul.sub-menu li {
 
 .section-card__text-box {
   width: 55%;
-  margin-right: 2%;
+  margin-right: 1%;
+  margin-left: 1%;
 }
 
 .section-card__img-box {
   display: flex;
   justify-content: center;
-  margin-left: 2%;
+  margin-right: 1%;
+  margin-left: 1%;
   filter: grayscale(100%);
 }
 
 .section-card__img-box:hover {
   filter: none;
-  display: none;
 }
 
 .section-button {
@@ -131,7 +142,7 @@ ul.sub-menu li {
 }
 
 .section-button a:hover {
-  background: red;
+  background: rgb(125, 184, 66);
 }
 
 .cards {
