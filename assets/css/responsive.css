@@ -1,0 +1,44 @@
+@media (max-width: 575.98px) {
+  .section-1 {
+    display: block;
+    box-sizing: border-box;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 150px;
+  }
+
+  .section-2 {
+    display: block;
+    box-sizing: border-box;
+    padding: 8px;
+  }
+
+  .section-card__text-box {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .section-card__img-box {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .menu-list ul {
+    display: block;
+    z-index: 100;
+  }
+
+  .header-wrapper {
+    justify-content: space-around;
+  }
+
+  .box-wrapper {
+    flex-direction: column;
+  }
+
+  .box-wrapper .box {
+    max-width: 100%;
+  }
+}

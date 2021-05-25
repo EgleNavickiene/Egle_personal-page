@@ -1,6 +1,5 @@
 body {
-    font-family: 'KoHo', sans-serif;
-  
+  font-family: "KoHo", sans-serif;
 }
 
 .main-container {
@@ -15,11 +14,11 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  z-index:19;
+  z-index: 19;
 }
 
 .header-wrapper {
-  margin:auto;
+  margin: auto;
   max-width: 1240px;
   /* width:100%; */
   background-color: white;
@@ -39,25 +38,29 @@ header {
 }
 
 .menu-list ul li a {
-  color: red;
+  color: black;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.section-1  {
+.home-link:hover {
+  color: red;
+}
+
+.section-1 {
   background-color: rgb(199, 230, 212);
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 60px;
-    padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 60px;
+  padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.section-2  {
+.section-2 {
   background-color: white;
-  padding:30px;
+  padding: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -71,22 +74,32 @@ header {
 .section-card__img-box {
   display: flex;
   justify-content: center;
-  margin-left:2%;
+  margin-left: 2%;
+  filter: grayscale(100%);
+}
+
+.section-card__img-box:hover {
+  filter: none;
+  display: none;
 }
 
 .section-button {
-  display: inline-block;
-  padding: 10px 30px;
   margin-bottom: 20px;
-  background-color: rgb(64, 98, 30);
   border-style: none;
   font-weight: 700;
 }
 
 .section-button a {
+  display: inline-block;
+  padding: 10px 30px;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
+  background-color: rgb(64, 98, 30);
+}
+
+.section-button a:hover {
+  background: red;
 }
 
 .cards {
@@ -101,15 +114,15 @@ header {
 .box-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 5% ;
+  margin-left: 5%;
   margin-right: 5%;
-  margin-top:30px;
+  margin-top: 30px;
   justify-content: space-between;
   align-content: center;
 }
 
 .box-wrapper-header {
-  margin:auto;
+  margin: auto;
   align-content: center;
   text-align: center;
   padding-bottom: 30px;
@@ -124,51 +137,4 @@ header {
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
-}
-
-@media (max-width: 575.98px)  {
-  .section-1 {
-    display: block;
-    box-sizing: border-box;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 150px;
-  }
-
-  .section-2 {
-    display: block;
-    box-sizing: border-box;
-    padding: 8px;
-  }
-
-  .section-card__text-box {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    margin:0 auto;
-    
-    }
-  .section-card__img-box {
-    width: 100%;
-    box-sizing: border-box;
-    justify-content: center;
-    }
-
-  .menu-list ul {
-    display: block;
-    z-index:100;
-  }
-
-  .header-wrapper {
-      justify-content: space-around;
-  }
-
-  .box-wrapper {
-    flex-direction: column;
-  }
-
-  .box-wrapper .box {
-    max-width: 100%;
-  }
-
 }
