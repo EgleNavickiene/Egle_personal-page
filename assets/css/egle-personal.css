@@ -1,6 +1,6 @@
 body {
     font-family: 'KoHo', sans-serif;
-    background-color: teal;
+  
 }
 
 .main-container {
@@ -26,7 +26,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: white; */
 }
 
 .menu-list ul {
@@ -39,7 +38,7 @@ header {
   padding-bottom: 5px;
 }
 
-.section-1 {
+.section-1  {
   background-color: rgb(199, 230, 212);
     padding-left: 30px;
     padding-right: 30px;
@@ -50,18 +49,26 @@ header {
   justify-content: space-between;
 }
 
+.section-2  {
+  background-color: white;
+  padding:30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .section-card__text-box {
   width: 55%;
-  margin-right: 5%;
+  margin-right: 2%;
 }
 
 .section-card__img-box {
   display: flex;
-  width: 35%;
-  justify-content: right;
+  justify-content: center;
+  margin-left:2%;
 }
 
-.button {
+.section-button {
   display: inline-block;
   padding: 10px 30px;
   margin-bottom: 20px;
@@ -70,19 +77,64 @@ header {
   font-weight: 700;
 }
 
-.button a {
+.section-button a {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.cards {
+  max-width: 860px;
+  width: 100%;
+  margin: auto;
+  margin-top: 5px;
+  text-align: center;
+  padding: 15 px;
+}
+
+.box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5% ;
+  margin-right: 5%;
+  margin-top:30px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.box-wrapper-header {
+  margin:auto;
+  align-content: center;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.box {
+  max-width: 33%;
+  background-color: white;
+  /* margin-right:2.5px;
+  margin-left: 2.5px; */
+  margin-bottom: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 @media (max-width: 575.98px)  {
   .section-1 {
     display: block;
     box-sizing: border-box;
-    padding: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
     padding-top: 150px;
   }
+
+  .section-2 {
+    display: block;
+    box-sizing: border-box;
+    padding: 8px;
+  }
+
   .section-card__text-box {
     display: block;
     box-sizing: border-box;
@@ -92,9 +144,8 @@ header {
     }
   .section-card__img-box {
     width: 100%;
-    margin:0 auto;
-    display: block;
     box-sizing: border-box;
+    justify-content: center;
     }
 
   .menu-list ul {
@@ -104,6 +155,14 @@ header {
 
   .header-wrapper {
       justify-content: space-around;
+  }
+
+  .box-wrapper {
+    flex-direction: column;
+  }
+
+  .box-wrapper .box {
+    max-width: 100%;
   }
 
 }
