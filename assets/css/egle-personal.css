@@ -43,8 +43,40 @@ header {
   text-transform: uppercase;
 }
 
-.home-link:hover {
+.menu-list ul ul.sub-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: red;
+  z-index: 99;
+}
+
+.menu-list a:hover {
   color: red;
+}
+
+.menu-list .active {
+  color: red;
+}
+
+.menu-list li:hover .sub-menu {
+  display: block;
+  background:red;
+}
+
+ul.sub-menu {
+  flex-wrap: wrap;
+  padding: 0 15px;
+  display: none;
+}
+
+ul.sub-menu li {
+  width: 100%;
+  padding: 10px;
+}
+
+.menu-list li {
+  position: relative;
 }
 
 .section-1 {
