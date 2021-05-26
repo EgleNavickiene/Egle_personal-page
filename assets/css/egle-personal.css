@@ -88,6 +88,7 @@ ul.sub-menu li {
 .menu-list li {
   position: relative;
 }
+/* MENU HEADER END */
 
 .section-1 {
   background-color: rgb(199, 230, 212);
@@ -192,6 +193,21 @@ ul.sub-menu li {
 .box-link:hover {
   color: rgb(125, 184, 66);
 }
+
+/* EIMANTO PAGALBA */
+.box-img-color {
+  display: none;
+}
+
+.box:hover .box-img {
+  display: none;
+}
+
+.box:hover .box-img-color {
+  display: inline;
+}
+/* EIMANTO PAGALBA - END */
+
 
 /* .box a img:hover {
   display:none;
