@@ -8,6 +8,7 @@ body {
   /* position: relative; */
 }
 
+/* MENU HEADER START */
 header {
   /* margin:auto; */
   position: fixed;
@@ -192,9 +193,9 @@ ul.sub-menu li {
   color: rgb(125, 184, 66);
 }
 
-.box a img:hover {
+/* .box a img:hover {
   display:none;
-}
+} */
 
 /* .box-img-color {
   display:none;
