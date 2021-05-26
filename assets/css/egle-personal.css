@@ -53,19 +53,18 @@ header {
 }
 
 .menu-list a:hover {
-  color: rgb(64, 98, 30);
-  font-weight: 600;
+  color: rgb(125, 184, 66);
+  font-weight: 700;
 }
 
 .menu-list .active {
-  color: rgb(64, 98, 30);
+  color: rgb(125, 184, 66);
   font-weight: 600;
 }
 
 .menu-list li:hover .sub-menu {
   display: block;
-  background:rgb(125, 184, 66);
-  
+  background: rgb(125, 184, 66);
 }
 
 ul.sub-menu {
@@ -173,6 +172,7 @@ ul.sub-menu li {
 
 .box {
   max-width: 33%;
+  color: black;
   background-color: white;
   /* margin-right:2.5px;
   margin-left: 2.5px; */
@@ -180,4 +180,26 @@ ul.sub-menu li {
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
+  text-decoration: none;
 }
+
+.box a {
+  color: black;
+  text-decoration: none;
+}
+
+.box-link:hover {
+  color: rgb(125, 184, 66);
+}
+
+.box a img:hover {
+  display:none;
+}
+
+/* .box-img-color {
+  display:none;
+} */
+
+/* .box-img-color:hover {
+  display: block;
+} */
