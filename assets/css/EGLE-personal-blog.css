@@ -1,5 +1,6 @@
 body {
     font-family: "KoHo", sans-serif;
+    
   }
   
   .main-container {
@@ -8,93 +9,97 @@ body {
     /* position: relative; */
   }
   
-  /* MENU HEADER START */
-  header {
-    /* margin:auto; */
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 19;
-    box-shadow: 0 1px 10px 0 rgb(0 0 0 / 30%);
-  }
+/* MENU HEADER START */
+/* ----------iškelta į kitą failą: pers-NAVIGATION.css */
+/* MENU HEADER END */
+
   
-  .header-wrapper {
-    margin: auto;
-    max-width: 1240px;
-    /* width:100%; */
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  /* TOP-baner - START */  
+  /*------------------------- pvz. iš dev.to */
+/* The container box is relative so we can position stuff inside of it */
+.top-banner {
+  position: relative;
+}
+
+/*The background and overlay need to be absolutely positioned */
+.top-banner__background,
+.top-banner__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* 
+The background image div sizes and positions the background itself.
+It's also at the bottom-most position in our "div stack" (z-index 1)
+
+We set the image url via a CSS custom property, that's set via the style attribute in our HTML
+*/
+.top-banner__background {
+  background: url(../img/egles-saka_landscape_light.jpg) center center no-repeat;
+  background-size: cover;
+  z-index: 1
+}
+
+/* The overlay div is just a colored element with some opacity.
+It's above the background image in our stack, so it appears to 
+darken the image 
+*/
+.top-banner__overlay {
+  background: rgba(4, 46, 6, 0.8);
+  z-index: 2;
+}
+
+/* 
+The content div is at the top of our stack. 
+We'd probably add some padding or flexbox properties here as well, 
+to place the content appropriately
+*/
+.top-banner__content  {
+  max-width: 60%;
+  margin:auto;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+
+  /* Finally, style and place the content */
+  color: white;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: block;
   }
-  
-  .menu-list ul {
-    display: flex;
-  }
-  
-  .menu-list ul li {
-    list-style: none;
-    padding-right: 30px;
-    padding-bottom: 5px;
-  }
-  
-  .menu-list ul li a {
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  
-  .menu-list ul ul.sub-menu {
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background: rgb(64, 98, 30);
-    z-index: 99;
-  }
-  
-  .menu-list a:hover {
-    color: rgb(125, 184, 66);
-    font-weight: 700;
-  }
-  
-  .menu-list .active {
-    color: rgb(125, 184, 66);
-    font-weight: 600;
-  }
-  
-  .menu-list li:hover .sub-menu {
-    display: block;
-    background: rgb(125, 184, 66);
-  }
-  
-  ul.sub-menu {
-    flex-wrap: wrap;
-    padding: 0 15px;
-    display: none;
-    color: white;
-  }
-  
-  ul.sub-menu a:hover {
-    color: white;
-    font-weight: 600;
-  }
-  
-  ul.sub-menu li {
-    width: 100%;
-    padding: 10px;
-  }
-  
-  .menu-list li {
-    position: relative;
-  }
-  /* MENU HEADER END */
-  
-  /* TOP-baner - START */
-  .top-baner {
-    position: relative;
-    display: block;
-    background-image: url(../img/egles-saka_landscape_light.jpg);
-    background-size: cover;
-    
+
+.content h1 {
+  letter-spacing: 3px;
+}
+
+.content a {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  font-weight: 700;
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.top-banner-button {
+  margin-top: 50px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.content a:hover {
+  color: white;
+  background: none;
+  border: 1px solid white;
 }

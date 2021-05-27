@@ -12,6 +12,7 @@
     />
 
     <link rel="stylesheet" href="assets/css/EGLE-personal-blog.css" />
+    <link rel="stylesheet" href="assets/css/pers-NAVIGATION.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
 
@@ -32,36 +33,49 @@
                 <li>
                   <a href="#"> About </a>
                 </li>
-                <li>
+                <li class="dropdown">
                   <a href="#"> Services </a>
                   <ul class="sub-menu">
                     <li>
-                      <a href="#"> Paslauga 1 </a>
+                      <a href="#"> Service 1 </a>
                     </li>
   
                     <li>
-                      <a href="#"> Paslauga 2 </a>
+                      <a href="#"> Service 2 </a>
                     </li>
   
                     <li>
-                      <a href="#"> Paslauga 3 </a>
+                      <a href="#"> Service 3 </a>
                     </li>
                   </ul>
                 </li>
-                <li>
+                <li class="dropdown">
                   <a href="#"> Porfolio </a>
                   <ul class="sub-menu">
                     <li>
-                      <a href="#"> Pvz. 1 </a>
+                      <a href="#"> Sample 1 </a>
                     </li>
   
                     <li>
-                      <a href="#"> Pvz. 2 </a>
+                      <a href="#"> Sample 2 </a>
                     </li>
   
                     <li>
-                      <a href="#"> Pvz. 3 </a>
+                      <a href="#"> Sample 3 </a>
                     </li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#"> blog </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#"> Blog home </a>
+                    </li>
+  
+                    <li>
+                      <a href="#"> Blog single </a>
+                    </li>
+                
                   </ul>
                 </li>
                 <li>
@@ -73,22 +87,43 @@
         </header>
         <!-- END HEADER -->
 
-            <!-- TOP-BANER start -->
-      <div class="top-baner">
-        <div class="top-baner-text-block">
-         <h1>
-           Dude You’re Getting a Telescope
-          </h1>
+          
+        
+        <!-- pvz-iš https://dev.to/selbekk/how-to-overlay-your-background-images-59le -->
+        <div class="top-banner">
+          <div 
+            class="top-banner__background" 
+            style="--image-url: url('some-image.jpg')">
+          </div>
 
-         <p>
-           There is a moment in the life of any aspiring astronomer 
-           that it is time to buy that first
-          </p>
-          <a href="#">view more</a>
+          <!--------------- tuščias div elementas -->
+          <div class="top-banner__overlay"></div>
+          
+          <div class="top-banner__content">
+
+            <div class="content">
+              <h1>
+               Dude You’re Getting<br>
+               a Telescope                
+              </h1>
+              <p>
+                There is a moment in the life of any aspiring astronomer 
+                that it is time to buy that first
+               </p>
+               <div class="top-banner-button">
+                <a href="#">
+                  view more
+                </a>
+               </div>
+               
+            </div>
+            
+          </div>
+
         </div>
+        <!-- pvz. pabaiga -->
 
-      </div>
-            <!-- TOP-BANER - end -->
+     
   
     </div>
       <!-- END .main-container -->   
