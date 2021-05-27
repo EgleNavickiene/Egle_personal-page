@@ -131,7 +131,7 @@ body {
 }
 /* EIMANTO PAGALBA - END */
 
-.box:hover > .box-link {
+.box > .box-link:hover {
   color: rgb(125, 184, 66);
 }
 
