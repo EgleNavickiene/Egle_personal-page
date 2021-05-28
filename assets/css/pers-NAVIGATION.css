@@ -1,6 +1,7 @@
   /* MENU HEADER START */
   header {
     /* margin:auto; */
+    background-color: white;
     position: fixed;
     left: 0;
     top: 0;
@@ -12,8 +13,7 @@
   .header-wrapper {
     margin: auto;
     max-width: 1240px;
-    /* width:100%; */
-    background-color: white;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;

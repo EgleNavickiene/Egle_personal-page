@@ -48,7 +48,7 @@ It's above the background image in our stack, so it appears to
 darken the image 
 */
 .top-banner__overlay {
-  background: rgba(4, 46, 6, 0.8);
+  background: rgba(13, 20, 13, 0.8);
   z-index: 2;
 }
 
@@ -58,8 +58,6 @@ We'd probably add some padding or flexbox properties here as well,
 to place the content appropriately
 */
 .top-banner__content  {
-  max-width: 60%;
-  margin:auto;
   text-align: center;
   position: relative;
   z-index: 3;
@@ -103,7 +101,59 @@ to place the content appropriately
   background: none;
   border: 1px solid white;
 }
+/* TOP-baner - END */
 
+/*--------------top-category-widget-box START  */
 .top-category-widget-box {
-  
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
 }
+
+.widget-card {
+  margin-top: 15px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image1 {
+  /* background-image: url(../img/social.jpg); */
+  background-size: cover;
+  background-position: center;
+  z-index: 1
+}
+
+.widget-card__overlay {
+  background:black;
+  background-size: cover;
+  min-height: 300px;
+  position: absolute;
+  top:0;
+  left: 0;
+  margin: 7%;
+  z-index: 5;
+}
+
+.text-on__widget-card {
+  color:white;
+  position: absolute;
+  top:20%; 
+  left:8%;
+  text-align: center; 
+  z-index: 10;
+}
+
+.text-on__widget-card h3 {
+text-transform: uppercase;
+}
+
+.text-on__widget-card hr {
+  width: 250px;
+}
+

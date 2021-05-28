@@ -18,7 +18,7 @@
 
   <body>
     
-    <div class="main-container">
+   
         <!-- HEADER START -->
         <header>
           <div class="header-wrapper">
@@ -86,21 +86,17 @@
           </div>
         </header>
         <!-- END HEADER -->
-
-          
         
-        <!-- made on sample from https://dev.to/selbekk/how-to-overlay-your-background-images-59le -->
+        
+        <!-- made by sample from https://dev.to/selbekk/how-to-overlay-your-background-images-59le -->
         <div class="top-banner">
-          <div 
-            class="top-banner__background" 
-            style="--image-url: url('some-image.jpg')">
+          <div class="top-banner__background">
           </div>
 
           <!--------------- EMPTY div element -->
           <div class="top-banner__overlay"></div>
           
           <div class="top-banner__content">
-
             <div class="content">
               <h1>
                Dude You’re Getting<br>
@@ -119,33 +115,64 @@
           </div>
         </div>
         <!-- made on sample END -->
+        
+    <div class="main-container">
 
-            <!-- top-category-widget-box START -->
+    <!-- top-category-widget-box START -->
         <div class="top-category-widget-box">
 
-          <div class="widget-details">
-            <h4>Social life</h4>
-            <span></span>
-            <p>Enjoy your social life together</p>
+               <!-- widget-card no.1 start -->
+          <div class="widget-card">           
+            <div class="card-image1">
+              <img src="assets/img/social.jpg">
+            </div>
+
+            <div class="widget-card__overlay"></div>
+
+              <div class="text-on__widget-card">                
+                <h3>Social life</h3>
+                <hr>
+                <p>Enjoy your social life together</p>
+              </div> 
           </div>
-        </div>
+                <!--end of widget-card no.1 -->  
 
-        <div class="widget-details">
-          <h4>Politics</h4>
-          <span></span>
-          <p>Be a part of politics</p>
-        </div>
-      </div>
+                <!-- widget-card no.2 start -->
+          <div class="widget-card">           
+                  <div class="card-image">
+                    <img src="assets/img/politics.jpg">
+                  </div>
+      
+                  <div class="widget-card__overlay"></div>
+      
+                    <div class="text-on__widget-card">                
+                      <h3>Politics</h3>
+                      <hr>
+                      <p>Be a part of politics</p>
+                    </div> 
+          </div>
+                <!--end of widget-card no.2 --> 
 
-      <div class="widget-details">
-        <h4>Food</h4>
-        <span></span>
-        <p>Let the food be finished</p>
+                <!-- widget-card no.3 start-->
+          <div class="widget-card">           
+                  <div class="card-image">
+                    <img src="assets/img/food.jpg">
+                  </div>
+      
+                  <div class="widget-card__overlay"></div>
+      
+                    <div class="text-on__widget-card">                
+                      <h3>Food</h3>
+                      <hr>
+                      <p>Let the food be finished</p>
+                    </div> 
+          </div>
+                  <!--end of widget-card no.2 --> 
+                      
       </div>
-    </div>
           <!--------------- top-category-widget-box END -->
 
     </div>
-      <!-- END .main-container -->   
+      <!-- END of .main-container -->   
 </body>
 </html>
