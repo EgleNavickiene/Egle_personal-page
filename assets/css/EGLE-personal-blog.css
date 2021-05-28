@@ -1,21 +1,19 @@
 body {
-    font-family: "KoHo", sans-serif;
-    
-  }
-  
-  .main-container {
-    max-width: 1240px;
-    margin: auto;
-    /* position: relative; */
-  }
-  
+  font-family: "KoHo", sans-serif;
+}
+
+.main-container {
+  max-width: 1240px;
+  margin: auto;
+  /* position: relative; */
+}
+
 /* MENU HEADER START */
 /* ----------iškelta į kitą failą: pers-NAVIGATION.css */
 /* MENU HEADER END */
 
-  
-  /* TOP-baner - START */  
-  /*------------------------- pvz. iš dev.to */
+/* TOP-baner - START */
+/*------------------------- pvz. iš dev.to */
 /* The container box is relative so we can position stuff inside of it */
 .top-banner {
   position: relative;
@@ -40,7 +38,7 @@ We set the image url via a CSS custom property, that's set via the style attribu
 .top-banner__background {
   background: url(../img/egles-saka_landscape_light.jpg) center center no-repeat;
   background-size: cover;
-  z-index: 1
+  z-index: 1;
 }
 
 /* The overlay div is just a colored element with some opacity.
@@ -57,7 +55,7 @@ The content div is at the top of our stack.
 We'd probably add some padding or flexbox properties here as well, 
 to place the content appropriately
 */
-.top-banner__content  {
+.top-banner__content {
   text-align: center;
   position: relative;
   z-index: 3;
@@ -72,7 +70,7 @@ to place the content appropriately
 
 .content {
   display: block;
-  }
+}
 
 .content h1 {
   letter-spacing: 3px;
@@ -105,12 +103,12 @@ to place the content appropriately
 
 /*--------------top-category-widget-box START  */
 .top-category-widget-box {
+  min-height: 450px;
   margin-top: 80px;
   margin-bottom: 80px;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
- 
 }
 
 .widget-card {
@@ -120,44 +118,55 @@ to place the content appropriately
   display: flex;
   align-items: center;
   justify-content: center;
-  width:300px;
+  width: 300px;
   height: 222px;
+}
+
+.card-image {
+  width: 300px;
+  height: 222px;
+  z-index: 1;
+  background-position: center;
 }
 
 .card-image-1 {
   background-image: url(../img/social.jpg);
-  background-size: cover;
-  width:300px;
-  height: 222px;
-  background-position: center;
-  z-index: 1
+}
+
+.card-image-2 {
+  background-image: url(../img/politics.jpg);
+}
+
+.card-image-3 {
+  background-image: url(../img/food.jpg);
 }
 
 .widget-card__overlay {
-  background:black;
-  background-size: cover;
-  height: 80%;
-  width: 80%;
+  background: black;
   position: absolute;
-  top:0;
-  left: 0;
-  z-index: 5;
+  height: 85%;
+  width: 85%;
+  margin: 7%;
+  opacity: 60%;
+  z-index: 2;
+}
+.widget-card:hover > .widget-card__overlay {
+  background: #8490ff;
 }
 
 .text-on__widget-card {
-  color:white;
+  color: white;
   position: absolute;
-  top:20%; 
-  left:8%;
-  text-align: center; 
-  z-index: 10;
+  text-align: center;
+  z-index: 3;
+  width: 80%;
 }
 
 .text-on__widget-card h3 {
-text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-.text-on__widget-card hr {
-  width: 250px;
+.text-on__widget-card a {
+  color: white;
+  text-decoration: none;
 }
-

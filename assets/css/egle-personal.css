@@ -1,5 +1,6 @@
 body {
   font-family: "KoHo", sans-serif;
+  padding-top: 55px;
 }
 
 .main-container {
@@ -14,10 +15,7 @@ body {
 
 .section-1 {
   background-color: rgb(199, 230, 212);
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding:30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
