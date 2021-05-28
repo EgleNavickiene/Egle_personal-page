@@ -120,11 +120,15 @@ to place the content appropriately
   display: flex;
   align-items: center;
   justify-content: center;
+  width:300px;
+  height: 222px;
 }
 
-.card-image1 {
-  /* background-image: url(../img/social.jpg); */
+.card-image-1 {
+  background-image: url(../img/social.jpg);
   background-size: cover;
+  width:300px;
+  height: 222px;
   background-position: center;
   z-index: 1
 }
@@ -132,11 +136,11 @@ to place the content appropriately
 .widget-card__overlay {
   background:black;
   background-size: cover;
-  min-height: 300px;
+  height: 80%;
+  width: 80%;
   position: absolute;
   top:0;
   left: 0;
-  margin: 7%;
   z-index: 5;
 }
 
