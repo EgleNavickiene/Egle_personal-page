@@ -101,9 +101,9 @@ to place the content appropriately
 }
 /* TOP-baner - END */
 
-/*--------------top-category-widget-box START  */
+/*-----START----top-category-widget-box   */
 .top-category-widget-box {
-  min-height: 450px;
+  max-height: 450px;
   margin-top: 80px;
   margin-bottom: 80px;
   display: flex;
@@ -170,3 +170,33 @@ to place the content appropriately
   color: white;
   text-decoration: none;
 }
+/*------top-category-widget-box END  */
+
+/* ---START post-content-area---------- */
+.post-content-area, .single-post-row {
+  display:flex;
+}
+
+.post-info-column {
+  width: 20%;
+}
+
+.post-content-column {
+  width: 50%;
+}
+
+.post-title-button a {
+
+}
+
+.sidebar-widgets {
+  width: 30%;
+}
+
+.search-widget form {
+  min-width: 80%;
+  background-color: #8490ff;
+}
+
+
+/* ---post-content-area----END------ */
