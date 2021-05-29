@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="assets/css/EGLE-personal-blog.css" />
     <link rel="stylesheet" href="assets/css/pers-NAVIGATION.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
   </head>
 
   <body>
@@ -176,7 +180,23 @@
             <!-- --single-post-row START -->
             <div class="single-post-row">
               <div class="post-info-column">
-                #
+                <ul class="tags">
+                  <li>
+                    <a href="#">Food,</a>
+                  </li>
+                  <li>
+                    <a href="#">Technology,</a>
+                  </li>
+                  <li>
+                    <a href="#">Politics,</a>
+                  </li>
+                  <li>
+                    <a href="#">Lifestyle</a>
+                  </li>
+                </ul>
+                <div class="user-details">
+                  <p>Lorem Ipsum</p>
+                </div>
               </div>
     
               <div class="post-content-column">
@@ -185,21 +205,22 @@
                   src="assets/img/MCSE-boot-camps.jpg" alt="MCSE-boot-camps"/>
                 </div>
                 
-                <a class="post-title" href="#">
-                  <h3>
-                    Astronomy Binoculars A Great Alternative
+                  <h3><a class="post-title" href="#">
+                     Astronomy Binoculars A Great Alternative</a>
+                   
                   </h3>
-                </a>
+  
                 <p class="post-excert">
                   MCSE boot camps have its supporters and its detractors. 
                   Some people do not understand why you should have to spend 
                   money on boot camp when you can get the MCSE study materials 
                   yourself at a fraction.
                 </p>
-                <a class="post-title-button" href="#">
-                  view more
-                </a>
-                
+                <div class="post-title-button">
+                  <a  href="#">
+                    view more
+                  </a>
+                  </div>
               </div>
 
             </div>
@@ -210,11 +231,52 @@
 
         <!-- ---sidebar-widgets START----------  -->
         <div class="sidebar-widgets">
-          <div class="single-sidebar-widget search-widget">
-            <form class="search-form">
-              <input type="text" placeholder="Search Post"/> 
-            </form>
+
+          <div class="single-sidebar-widget">
+            <div class=" search-widget">
+              <form class="search-form">
+                <input type="text" placeholder="Search Post"/> 
+              </form>
+              
+              <button type="submit">
+                <i class="las la-search">                
+                </i>
+              </button> 
+            </div>          
           </div>
+
+          <div class="single-sidebar-widget ">
+            <div class="user-info-widget">
+            <img src="assets/img/barber_cat.jpg" 
+            alt="barber-cat"/>
+            <a href="#">
+              <h4>
+                Charlie Barber
+              </h4>
+              <p>
+                Senior blog writter
+              </p>
+            </a>
+              
+              <ul class="social-links">
+                <li><a href="#"><i class="lab la-facebook-f"></i></a></li>
+                <li><a href="#"><i class="lab la-twitter"></i></a></li>
+                <li><a href="#"><i class="lab la-github"></i></a></li>
+                <li><a href="#"><i class="lab la-behance"></i></a></li>
+                </ul>
+                <p>
+                Boot camps have its supporters andit sdetractors. Some people 
+                do not understand why you should have to spend money on boot camp 
+                when you can get. Boot camps have itssuppor ters andits detractors.
+                </p> 
+            </div>  
+            
+            <div class="popular-title">
+              ##
+            </div>
+
+          </div>
+
         </div>
         <!-- ---sidebar-widgets END-----  -->
 
