@@ -71,10 +71,11 @@ to place the content appropriately
 
 .content {
   display: block;
+  letter-spacing: 1px;
 }
 
 .content h1 {
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .content a {
@@ -104,7 +105,7 @@ to place the content appropriately
 
 /*-----START----top-category-widget-box   */
 .top-category-widget-box {
-  max-height: 450px;
+  /* max-height: 450px; */
   margin-top: 80px;
   margin-bottom: 80px;
   display: flex;
@@ -161,10 +162,12 @@ to place the content appropriately
   text-align: center;
   z-index: 3;
   width: 80%;
+  letter-spacing: 1px;
 }
 
 .text-on__widget-card h3 {
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .text-on__widget-card a {
@@ -174,24 +177,24 @@ to place the content appropriately
 /*------top-category-widget-box END  */
 
 /* ---START post-content-area---------- */
-.post-content-area, .single-post-row {
-  display:flex;
+.post-content-area,
+.single-post-row {
+  display: flex;
   justify-content: center;
 }
 
 .post-list {
   box-sizing: border-box;
   max-width: 65%;
-
 }
 
 .single-post-row {
-  display:flex;
+  display: flex;
   margin-bottom: 40px;
 }
 
 .post-info-column {
-  /* width: 40%; */
+  width: 40%;
   text-align: right;
 }
 
@@ -205,6 +208,7 @@ to place the content appropriately
 }
 .user-details span {
   padding-left: 5px;
+  font-size: 16pt;
 }
 
 .post-content-column {
@@ -214,7 +218,7 @@ to place the content appropriately
   padding-right: 15px;
 }
 
-.tags{
+.tags {
   display: inline-block;
   list-style: none;
   margin-top: 0;
@@ -233,18 +237,18 @@ to place the content appropriately
   text-align: right;
 }
 
-
-.feature-img .img-fluid > .contain {
-  object-fit: contain;
+.feature-img .img-fluid {
+  width: 100%;
+  height: auto;
 }
 
 .post-content-column a {
-  display:inline-block;
+  display: inline-block;
   width: auto;
   color: black;
   text-decoration: none;
   text-transform: capitalize;
-  font-weight: 700; 
+  font-weight: 700;
 }
 
 .post-title-button {
@@ -265,17 +269,17 @@ to place the content appropriately
 }
 
 .search-widget {
-  display:flex;
+  display: flex;
   flex-wrap: nowrap;
   margin-bottom: 15px;
 }
 
 .sidebar-widgets {
+  max-width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 40%;
-  padding: 15px;  
+  padding: 15px;
   border-style: solid;
   border-width: 1px;
   border-color: rgba(128, 128, 128, 0.5);
@@ -296,7 +300,7 @@ to place the content appropriately
   background-color: rgb(125, 184, 66);
   border: none;
   text-decoration: none;
-  color:white;
+  color: white;
   padding: 15px;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
@@ -306,29 +310,24 @@ to place the content appropriately
   background-color: rgb(125, 184, 66);
   padding: 10px;
   margin-left: 10px;
-  width:90%;
+  width: 90%;
   border: none;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
-  font-family: "KoHo", sans-serif; 
-  font-size: larger; 
+  font-family: "KoHo", sans-serif;
+  font-size: larger;
 }
 
-::placeholder {
+.search-form-input::placeholder {
   color: white;
   letter-spacing: 1px;
   padding-left: 10px;
-} 
-
-.search-widget input[type=text] {
-  color: white;
-  letter-spacing: 1px;
 }
 
 .user-info-widget {
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .user-info-widget img {
@@ -336,7 +335,7 @@ align-items: center;
   margin-top: 15px;
 }
 
-.user-info-widget li {
+.single-sidebar-widget li {
   display: inline;
   align-content: center;
   margin-top: 0px;
@@ -345,11 +344,11 @@ align-items: center;
 
 .user-info-widget a {
   text-decoration: none;
-  color:black;
+  color: black;
   text-align: center;
 }
 
-.single-sidebar-widget h4 {
+.user-info-widget h4 {
   margin-top: 20px;
   margin-bottom: 0px;
 }
@@ -359,59 +358,127 @@ align-items: center;
   margin-bottom: 5px;
 }
 
-.social-links  {
+.social-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 40%;
   list-style-type: none;
   padding-inline-start: 0px;
 }
 
-.popular-post-widget {
-  display:block;
+.social-links li {
+  font-size: 16pt;
 }
 
 .single-post-list {
-  display:flex;
+  display: flex;
   margin-bottom: 15px;
 }
 
 .single-post-list a {
   text-decoration: none;
-  color:black;
+  color: black;
 }
 
 .single-post-list__details {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   padding-left: 10px;
 }
 
-.popular-post-widget h5, p {
+.single-post-thumb {
+  width: 100%;
+  height: auto;
+}
+
+.popular-post-widget h5,
+p {
   margin-top: 0;
   margin-left: 5px;
   margin-bottom: 0px;
   font-size: 16px;
 }
 
-.popular-post-title .popular-title {
-  margin-top: 0px;
+.single-widget-title .widget-title {
+  margin-top: 10px;
   margin-bottom: 25px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+  letter-spacing: 1px;
   font-size: larger;
   color: white;
   background-color: rgb(125, 184, 66);
-  padding:15px;
-  width: 90%;
+  padding: 15px;
 }
 
+.post-catgories-widget {
+  width: 100%;
+}
 
+.categories-list {
+  padding-left: 0;
+}
 
+.post-catgories-widget a {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  padding-inline-start: 0px;
+  color: black;
+  border-bottom-style: dotted;
+  border-width: 1px;
+  border-color: rgba(128, 128, 128, 0.5);
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
 
+.email-suscribe-wrapper {
+  width: 100%;
+  display: flex;
+}
 
+.form-input::placeholder {
+  color: gray;
+  letter-spacing: 1px;
+  padding-left: 10px;
+}
+
+.form-input {
+  box-sizing: border-box;
+  width: 65%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: url(https://icons-for-free.com/iconfiles/png/512/envenlope+letter+mail+icon-1320166581886181651.png);
+  background-size: 35px;
+  background-repeat: no-repeat;
+  border-color: rgba(128, 128, 128, 0.5);
+  font-size: 14px;
+}
+
+.subscribe {
+  box-sizing: border-box;
+  width: 35%;
+  padding: 10px 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(125, 184, 66);
+  color: white;
+  letter-spacing: 1px;
+  border-style: solid;
+  border-color: rgb(125, 184, 66);
+}
+
+.widget-title .tag-clouds-title {
+  display: inline;
+  width:100%;
+}
 
 /* ---post-content-area----END------ */
