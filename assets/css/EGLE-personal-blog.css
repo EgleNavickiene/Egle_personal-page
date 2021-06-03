@@ -4,7 +4,7 @@ body {
 }
 
 .main-container {
-  max-width: 1240px;
+  max-width: 1140px;
   margin: auto;
   /* position: relative; */
 }
@@ -184,8 +184,10 @@ to place the content appropriately
 }
 
 .post-list {
+  display: block;
   box-sizing: border-box;
-  max-width: 65%;
+  box-sizing: border-box;
+  width: 65%;
 }
 
 .single-post-row {
@@ -194,7 +196,7 @@ to place the content appropriately
 }
 
 .post-info-column {
-  width: 40%;
+  width: 25%;
   text-align: right;
 }
 
@@ -216,12 +218,14 @@ to place the content appropriately
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
+  max-width: 75%;
 }
 
 .tags {
   display: inline-block;
   list-style: none;
   margin-top: 0;
+  padding-inline-start:0;
 }
 
 .tags a {
@@ -232,9 +236,16 @@ to place the content appropriately
 .tags li {
   display: inline;
 }
+.tags li:hover a {
+  color:rgb(115, 173, 58);
+}
 
 .user-details {
   text-align: right;
+}
+
+.user-data:hover a {
+  color:rgb(115, 173, 58);  
 }
 
 .feature-img .img-fluid {
@@ -249,6 +260,10 @@ to place the content appropriately
   text-decoration: none;
   text-transform: capitalize;
   font-weight: 700;
+}
+
+.post-content-column h3:hover a {
+  color:rgb(115, 173, 58);
 }
 
 .post-title-button {
@@ -333,6 +348,9 @@ to place the content appropriately
 .user-info-widget img {
   border-radius: 100%;
   margin-top: 15px;
+  
+  width: 100%;
+  height: auto;
 }
 
 .single-sidebar-widget li {
@@ -393,12 +411,15 @@ to place the content appropriately
   height: auto;
 }
 
-.popular-post-widget h5,
-p {
+.popular-post-widget h5, p {
   margin-top: 0;
   margin-left: 5px;
   margin-bottom: 0px;
   font-size: 16px;
+}
+
+.single-post-list__details:hover a {
+  color: rgb(125, 184, 66);
 }
 
 .single-widget-title .widget-title {
@@ -420,6 +441,11 @@ p {
 
 .categories-list {
   padding-left: 0;
+}
+
+.categories-list li:hover a {
+  color: rgb(125, 184, 66);
+  border-color: rgb(125, 184, 66);
 }
 
 .post-catgories-widget a {
@@ -476,9 +502,29 @@ p {
   border-color: rgb(125, 184, 66);
 }
 
-.widget-title .tag-clouds-title {
-  display: inline;
-  width:100%;
+.tag-cloud-widget ul li {
+  display: inline-block;
+  box-sizing: border-box;
+  background: white;
+  padding: 4px 14px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  margin-bottom: 10px;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding-inline-start: 0px;
+  justify-content: center;
+}
+
+.pagination li a {
+  text-decoration: none;
+  color: black;
+}
+
+.page-link {
+  padding: 10px;
 }
 
 /* ---post-content-area----END------ */
