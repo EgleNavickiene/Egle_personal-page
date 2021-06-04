@@ -3,7 +3,7 @@ body {
   font-family: "KoHo", sans-serif;
 }
 
-.main-container {
+.container {
   max-width: 1140px;
   margin: auto;
   /* position: relative; */
@@ -385,6 +385,7 @@ to place the content appropriately
 }
 
 .social-links li {
+  color: black;
   font-size: 16pt;
 }
 
@@ -455,7 +456,7 @@ to place the content appropriately
   padding-inline-start: 0px;
   color: black;
   border-bottom-style: dotted;
-  border-width: 1px;
+  border-width: 2px;
   border-color: rgba(128, 128, 128, 0.5);
   margin-left: 0;
   margin-right: 0;
@@ -502,29 +503,119 @@ to place the content appropriately
   border-color: rgb(125, 184, 66);
 }
 
-.tag-cloud-widget ul li {
+ .cloud-tag .tag-link {
   display: inline-block;
   box-sizing: border-box;
   background: white;
   padding: 4px 14px;
   border: 1px solid rgba(128, 128, 128, 0.5);
   margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  list-style: none;
 }
+
+.cloud-tag {
+  padding-inline-start: 0px;
+}
+
+.cloud-tag li:hover .tag-link {
+  background: rgb(125, 184, 66);
+  color: white;
+}
+
 
 .pagination {
   display: flex;
   list-style: none;
   padding-inline-start: 0px;
   justify-content: center;
+  
+  list-style: none;
 }
 
-.pagination li a {
+.page .page-link {
+  padding: 10px;
   text-decoration: none;
   color: black;
 }
 
-.page-link {
-  padding: 10px;
+.page:hover .page-link {
+  background: rgb(125, 184, 66);
+  color: white;
+}
+/* ---post-content-area----END------ */
+
+/* --footer area START-- */
+.footer-section {
+  background: rgb(42, 65, 20);
+  color: white;
 }
 
-/* ---post-content-area----END------ */
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.footer-column-wide {
+  display: block;
+  width: 35%;
+  padding-right: 20px;
+}
+
+.footer-column-narrow {
+  width: 20%;
+}
+
+.fotter-subscribe-button {
+  display:block;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: larger;
+  background: rgb(125, 184, 66);
+  border-color: rgb(125, 184, 66);
+  border-style: solid;
+  border-width: 2pt;
+}
+
+.footer-form-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: white;
+  border-color: rgba(128, 128, 128, 0.5);
+  font-size: 14px;
+}
+
+.footer-row .social-links a {
+  padding-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.copyright-row {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.copyright-row-link {
+  text-decoration: none;
+  font-size: larger;
+  color: white;
+}
+
+.copyright-row-link:hover {
+  color: rgb(125, 184, 66);
+}
+
+.subscribe-confirm-text {
+  color: rgb(125, 184, 66);
+  display: none;
+}
