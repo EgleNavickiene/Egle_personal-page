@@ -11,13 +11,13 @@
   .header-wrapper {
     justify-content: space-around;
   }
-  
-  .section-1, .section-2  {
+
+  .section-1,
+  .section-2 {
     display: block;
     box-sizing: border-box;
     padding: 8px;
   }
-
 
   .section-card {
     flex-wrap: wrap;
@@ -31,11 +31,12 @@
     text-align: center;
   }
 
-  .section-card__img-box {
+  .section-1 .section-card__img-box,
+  .section-2 .section-card__img-box {
     max-width: 100%;
     filter: none;
   }
-  
+
   .box-wrapper {
     flex-direction: column;
     margin-top: 0px;
@@ -45,13 +46,11 @@
     max-width: 100%;
   }
 
-  .facts-area-row {
+  .column-row {
     flex-wrap: wrap;
   }
-  
+
   .fact-column {
     width: 45%;
   }
-
 }
-
