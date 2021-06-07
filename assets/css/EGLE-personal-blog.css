@@ -390,6 +390,10 @@ to place the content appropriately
   font-size: 16pt;
 }
 
+.social-links li:hover a {
+  color: rgb(125, 184, 66);
+}
+
 .single-post-list {
   display: flex;
   margin-bottom: 15px;
