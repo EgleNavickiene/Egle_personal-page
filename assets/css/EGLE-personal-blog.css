@@ -225,7 +225,7 @@ to place the content appropriately
   display: inline-block;
   list-style: none;
   margin-top: 0;
-  padding-inline-start:0;
+  padding-inline-start: 0;
 }
 
 .tags a {
@@ -237,7 +237,7 @@ to place the content appropriately
   display: inline;
 }
 .tags li:hover a {
-  color:rgb(115, 173, 58);
+  color: rgb(115, 173, 58);
 }
 
 .user-details {
@@ -245,7 +245,7 @@ to place the content appropriately
 }
 
 .user-data:hover a {
-  color:rgb(115, 173, 58);  
+  color: rgb(115, 173, 58);
 }
 
 .feature-img .img-fluid {
@@ -263,7 +263,7 @@ to place the content appropriately
 }
 
 .post-content-column h3:hover a {
-  color:rgb(115, 173, 58);
+  color: rgb(115, 173, 58);
 }
 
 .post-title-button {
@@ -349,7 +349,7 @@ to place the content appropriately
 .user-info-widget img {
   border-radius: 100%;
   margin-top: 15px;
-  
+
   width: 100%;
   height: auto;
 }
@@ -417,7 +417,8 @@ to place the content appropriately
   height: auto;
 }
 
-.pop-post-title,  .pop-post-time {
+.pop-post-title,
+.pop-post-time {
   margin-top: 0;
   margin-left: 5px;
   margin-bottom: 0px;
@@ -508,7 +509,7 @@ to place the content appropriately
   border-color: rgb(125, 184, 66);
 }
 
- .cloud-tag .tag-link {
+.cloud-tag .tag-link {
   display: inline-block;
   box-sizing: border-box;
   background: white;
@@ -529,13 +530,12 @@ to place the content appropriately
   color: white;
 }
 
-
 .pagination {
   display: flex;
   list-style: none;
   padding-inline-start: 0px;
   justify-content: center;
-  
+
   list-style: none;
 }
 
@@ -557,7 +557,6 @@ to place the content appropriately
   color: white;
 }
 
-
 .footer-row {
   display: flex;
   justify-content: space-between;
@@ -575,7 +574,7 @@ to place the content appropriately
 }
 
 .fotter-subscribe-button {
-  display:block;
+  display: block;
   box-sizing: border-box;
   padding: 10px;
   margin-top: 10px;
