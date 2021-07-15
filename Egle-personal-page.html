@@ -5,6 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EGLE</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+    <!-- Slick bibliotekos css failas -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick/slick.css" />
+
+    <!-- Slick stiliaus/temos failas -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/slick/slick-theme.css"
+    />
+ <link
+   href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+   rel="stylesheet"
+   integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+   crossorigin="anonymous"
+ />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=KoHo:wght@200;400;600;700&display=swap"
@@ -287,28 +306,34 @@
     </div>
     <!-- END .container -->
 
-    <div class="section-gap">
-      <div class="container">
-        <div class="column-row facts-area-row">
-          <div class="fact-column">
-            <h1 class="counter">2536</h1>
-            <p>Projects Completed</p>
-          </div>
-          <div class="fact-column">
-            <h1 class="counter">6784</h1>
-            <p>Happy Clients</p>
-          </div>
-          <div class="fact-column">
-            <h1 class="counter">22239</h1>
-            <p>Cups of Coffee</p>
-          </div>
-          <div class="fact-column">
-            <h1 class="counter">434</h1>
-            <p>Real Professionals</p>
-          </div>
+         <!-- counter gap -->
+  <div class="section-gap">
+    <div class="container">
+      <div class="column-row facts-area-row">
+
+        <div class="fact-column">
+          <h1 class="counter" data-count="236">0</h1>
+          <p>Projects Completed</p>
         </div>
+
+        <div class="fact-column">
+          <h1 class="counter" data-count="184">0</h1>
+          <p>Happy Clients</p>
+        </div>
+
+        <div class="fact-column">
+          <h1 class="counter" data-count="2239">0</h1>
+          <p>Cups of Coffee</p>
+        </div>
+
+        <div class="fact-column">
+          <h1 class="counter" data-count="84">0</h1>
+          <p>Real Professionals</p>
+        </div>
+
       </div>
     </div>
+  </div>
 
     <!-- Price-area START -->
     <div class="price-area">
@@ -464,9 +489,11 @@
                 <i class="las la-comment-alt"></i><span>04</span>
               </div>
             </div>
-            <a href="#" class="blog-announce-title">
-              <h4>BREAK THROUGH SELF DOUBT AND FEAR</h4>
-            </a>
+            <div class="blog-announce-header">
+              <a href="#" class="blog-announce-title">
+                <h4>BREAK THROUGH SELF DOUBT AND FEAR</h4>
+              </a>
+            </div>            
             <p>
               Dream interpretation has many forms; it can be done be done for
               the sake of fun, hobby or can be taken up as a serious career.
@@ -503,9 +530,11 @@
                 <i class="las la-comment-alt"></i><span>04</span>
               </div>
             </div>
-            <a href="#" class="blog-announce-title">
-              <h4>PORTABLE FASHION FOR YOUNG WOMEN</h4>
-            </a>
+            <div class="blog-announce-header">
+              <a href="#" class="blog-announce-title">
+                <h4>PORTABLE FASHION FOR YOUNG WOMEN</h4>
+              </a>
+            </div>            
             <p>
               You may be a skillful, effective employer but if you don’t trust
               your personnel and the opposite, then the chances of improving.
@@ -542,10 +571,11 @@
                 <i class="las la-comment-alt"></i><span>04</span>
               </div>
             </div>
-
-            <a href="#" class="blog-announce-title">
-              <h4>DO DREAMS SERVE AS A PREMONITION</h4>
-            </a>
+            <div class="blog-announce-header">
+              <a href="#" class="blog-announce-title">
+                <h4>DO DREAMS SERVE AS A PREMONITION</h4>
+              </a>
+            </div>            
             <p>
               So many of us are demotivated to achieve anything. Such people are
               not enthusiastic about anything. They don’t want to work involved.
@@ -615,7 +645,117 @@
     </div>
     <!-- brands area END -->
 
-    <!-- Footer section START -->
+     <!-- Slick logos slider -->
+     <div class="container">
+      <div class="slick-slider">
+        <div class="slick-item-wrapper">
+          <div class="my-slide">
+            <a href="#">
+              <img class="logo-blue"
+              src="assets/img/mitech-client-logo-08-hover.png"
+              alt="slide image01"
+            />
+            </a>            
+          </div>
+        </div>
+
+        <div class="slick-item-wrapper">
+          <div class="my-slide">
+            <a href="#">
+              <img class="logo-blue"
+              src="assets/img/mitech-client-logo-09-hover.png"
+              alt="slide image09"
+            />
+            </a>            
+          </div>
+        </div>
+
+        <div class="slick-item-wrapper">
+          <div class="my-slide">
+            <a href="#">
+              <img class="logo-blue"
+              src="assets/img/mitech-client-logo-02-hover.png"
+              alt="slide image02"
+            />
+            </a>            
+          </div>
+        </div>
+        
+        <div class="slick-item-wrapper">
+          <div class="my-slide">
+            <a href="#">
+              <img class="logo-blue"
+              src="assets/img/mitech-client-logo-08-hover.png"
+              alt="slide image06"
+            />
+            </a>            
+          </div>
+        </div>
+        <div class="slick-item-wrapper">
+          <div class="my-slide">
+            <a href="#">
+              <img class="logo-blue"
+              src="assets/img/mitech-client-logo-03-hover.png"
+              alt="slide image03"
+            />
+            </a>            
+          </div>
+        </div>
+
+        <div class="slick-item-wrapper">
+          <div class="my-slide">
+            <a href="#">
+              <img class="logo-blue"
+              src="assets/img/mitech-client-logo-08-hover.png"
+              alt="slide image08"
+            />
+            </a>            
+          </div>
+        </div>
+
+        <div class="slick-item-wrapper">
+          <div class="my-slide">
+            <a href="#">
+              <img class="logo-blue"
+              src="assets/img/mitech-client-logo-04-hover.png"
+              alt="slide image04"
+            />
+            </a>            
+          </div>
+        </div>
+
+        <div class="slick-item-wrapper ">
+          <div class="my-slide">
+            <a href="#">
+              <img class="logo-blue"
+              src="assets/img/mitech-client-logo-05-hover.png"
+              alt="slide image05"
+            />
+            </a>            
+          </div>
+        </div>
+      </div>
+    </div>    
+    <!-- Slick logos slider END -->
+
+    <!-- cookies SLAPUKAI area -->
+    <div id="slapukai" class="slapukai-container">
+      <h2>ŠIOJE SVETAINĖJE NAUDOJAMI SLAPUKAI</h2>
+      <p>Naudojame slapukus, kad galėtume suasmeninti turinį bei skelbimus, teikti visuomeninės medijos funkcijas ir analizuoti srautą. Be to, svetainės naudojimo informaciją bendriname su visuomeninės medijos, reklamavimo ir analizės partneriais, kurie gali ją pridėti prie kitos jūsų pateiktos arba naudojant paslaugas surinktos informacijos.</p>
+      <button class="submit" id="sutinku">Sutinku</button>
+      <a href="#" class="dropdown">Daugiau informacijos</a>
+    </div>
+
+    <!-- scroll-to-top rodykle -->
+  <div>
+    <a href="#" class="gotop">
+      <i class="las la-arrow-up arrow arrow-top"></i>
+      <i class="las la-arrow-up arrow arrow-bottom"></i>
+    </a>
+  </div>
+    
+
+    <!-- Footer section START (css- naudojama blog'o /footer area/!) -->
     <footer class="footer-section">
       <div class="container">
         <div class="footer-row">
@@ -685,5 +825,40 @@
       </div>
     </footer>
     <!-- Footer section END -->
+
+      <!-- Slick ir bootstrap js dalis -->
+  <!-- Eiliskumas su JS failais LABAI svarbu
+        1. Pirmas Eina jQuery 
+        2. Eina Slick javascript failas
+        3. Slick Slider funkcijos iskvietimas
+    -->
+
+    <!-- Cia yra 1. -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+
+    <!-- Jei nuorodos pradzia src prasideda // , 
+        turetume pakeisti tai i https:// 
+        nes kitaip turesime problemu dirbami lokaliai
+    -->
+    <!-- Cia yra 2. -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <!-- Boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+    <!-- Cia yra 3 -->
+    <script src="assets/js/pers-js.js"></script>
   </body>
 </html>
